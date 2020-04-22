@@ -1,37 +1,24 @@
-# Datos-COVID19
-El objetivo de la Mesa de Datos COVID-19 liderada por el Ministerio de Ciencia, Tecnología, Conocimiento e Innovación es disponer la información epidemiológica de nuestro país para promover el uso de datos para investigación científica, clínica y para soluciones innovadoras que contribuyan a la toma de decisiones de las autoridades y la ciudadanía frente a esta pandemia. Como primer resultado de este equipo técnico, se disponen los datos epidemiológicos provenientes del Ministerio de Salud (MINSAL), documentados y abiertos para el análisis de la comunidad, en concordancia con la Ley Nº 19.628. 
+# Charla: Spatial Data Science COVID19 Chile
 
-Ver http://www.minciencia.gob.cl/COVID19 para más información.
+Este repositorio ha sido clonado del repositorio de datos original del Ministerio de Ciencia, Tecnología, Conocimiento e Innovación [https://github.com/MinCiencia/Datos-COVID19](https://github.com/MinCiencia/Datos-COVID19).
 
-# Data Products
-[data product 1: Casos totales por comuna incremental](output/producto1): archivo con valores separados por coma (csv) que concatena historia de publicaciones de MINSAL sobre casos totales por comuna. Contiene los campos 'Región', 'Comuna', 'Población', '[fecha]', donde la última columna tiene los 'Casos Confirmados' reportados en cada publicación.
+El objetivo de este repositorio es mostrar a la comunidad académica, científica y gubernamental las posibilidades del análisis de datos espaciales sobre los datos actuales y potenciales para el mejor entendimiento del COVID19 en Chile.  
 
-[data product 2: Casos totales por comuna](output/producto2) (un archivo por informe): archivos con valores separados por coma (csv) con la información a nivel comunal por cada informe publicado. Cada archivo contiene los campos 'Región', 'Comuna', 'Población', 'Casos Confirmados'.
+Este repositorio fué clonado el 8 de Abril y ha sido actualizado solo en el producto 2 al 20 de Abril. Para ver toda la información actualizada, dirigirse al repositorio o ir a http://www.minciencia.gob.cl/COVID19 para más información.
 
-[data product 3: Casos totales por región incremental](output/producto3): archivo con valores separados por coma (csv) que concatena historia de publicaciones de casos totales por parte de MINSAL. Contiene los campos 'Región', '[fecha]', este último con el valor de la columna 'Casos totales' reportados por el MINSAL diariamente.
+# Productos de este repositorio
 
-[data product 4: Casos totales por región](output/producto4) (un archivo por informe): archivos con valores separados por coma (csv) con la información a nivel regional publicada diariamente por MINSAL, las columnas varían a mediada que MINSAL dispone la información. Los campos para archivos posteriores a 31/3  son 'Región', 'Casos Nuevos', 'Casos totales', '%Casos Totales', 'Fallecidos'; para archivos anteriores son 'Región', 'Casos Nuevos', 'Casos totales', 'Recuperados'.  
+- Diapositivas: `SpatialDataScience_COVID19.pdf`
+- Código Estático para visualizar productos: `SpatialDataScience_COVID19_CEPRUAI.html`
+- Código Interactivo para correr código y/o modificar productos: `SpatialDataScience_COVID19_CEPRUAI.Rmd`
 
-[data product 5: Casos totales recuperados](output/producto5): archivo con valores separados por coma (csv) con casos recuperados totales con el valor diario reportado por el MINSAL. Contiene los campos '[fecha]', 'Recuperados'
 
-[data product 6: enriquecimiento del data product2](output/contrib/bulk): producto2 con todos los datos compilados en formato CSV y JSON, llamados producto2.csv y producto2.json respectivamente.
+## Contacto
 
-## Como funciona?
-En cuanto a los archivos a nivel comunal: Transcribimos los datos publicados por el Ministerio de Salud en pdf en:
-https://www.minsal.cl/nuevo-coronavirus-2019-ncov/informe-epidemiologico-covid-19/
-A partir de esa transcripción se genera un archivo csv, ubicado en la carpeta input.
-Este se procesa con el código en src, para generar los archivos csv en output.
+**Esteban López Ochoa**:
 
-En cuanto a los archivos a nivel regional: Hacemos scrapping de tabla en https://www.minsal.cl/nuevo-coronavirus-2019-ncov/casos-confirmados-en-chile-covid-19/ y generamos archivo csv por día.
-
-![dataUpdate](https://github.com/MinCiencia/Datos-COVID19/workflows/dataUpdate/badge.svg)
-
-# Contacto
-Si encuentras errores, por favor repórtalos [acá](https://github.com/MinCiencia/Datos-COVID19/issues). La automatización de este proceso y disposición de datos ha sido inicializada por el equipo del Data Observatory (http://www.dataobservatory.net), estan todos invitados a colaborar.
-Si has creado una solución que permita facilitar el trabajo con estos datos, algún análisis, o simplemente tienes una solicitud de data product considerando los datos que MINSAL hace públicos hoy, escríbenos a darancibia@minciencia.gob.cl
-
-## Agradecimientos
-
-Geógrafo Virginia Behm - académica Escuela de Salud Pública U. Chile.
-
-Miguel A. Bustos Valdebenito | Estudiante Dr. Ing. Mec. - U.Chile | Mtr. Ing. Ind. - UAI  | Ing. Civil y Ejec. Mec. - U. de Santiago
+  - email: esteban.lopez [at] uai.cl
+  - GitHub: [github.com/estebanlp](http://github.com/estebanlp)
+  - Profesor Asistente Escuela de Negocios
+  - Director Ejecutivo [CEPR-UAI](http://www.cepr.uai.cl)
+  - Director Académico [Diplomado en Big Data para Políticas Públicas](https://gobierno.uai.cl/diplomado/diplomado-big-data-politicas-publicas-vina-del-mar/)
