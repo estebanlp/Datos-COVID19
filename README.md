@@ -12,6 +12,23 @@ Este repositorio fué clonado el 8 de Abril y ha sido actualizado solo en el pro
 - Código Estático para visualizar productos: `SpatialDataScience_COVID19_CEPRUAI.html`
 - Código Interactivo para correr código y/o modificar productos: `SpatialDataScience_COVID19_CEPRUAI.Rmd`
 
+### Links: 
+
+**Programador Básico**
+
+[Link de códigos y mapas (estático)]
+(https://rpubs.com/estebanlp/SpatialDataCience-COVID19)
+
+**Programador Intermedio**
+
+[Link de Rstudio Cloud (interactivo – correr Código)]
+(https://rstudio.cloud/project/1184270)
+
+**Programador Avanzado**
+
+[Link del repositorio para que lo clone y haga un Pull Request o cree un Issue.]
+(https://github.com/estebanlp/Datos-COVID19)
+
 
 ## Contacto
 
